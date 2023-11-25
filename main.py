@@ -34,7 +34,8 @@ def deal_card():
   new_card_computer = dealer()
   cards["Player1"].append(new_card_player1)
   cards["Computer"].append(new_card_computer)
-  print(f"Your cards: {cards['Player1']}, current score: {sum(cards['Player1'])}")
+  current_score = sum(cards['Player1'])
+  print(f"Your cards: {cards['Player1']}, current score: {current_score}")
   print(f"Computer first card: {cards['Computer']}")
   
 def end_game():
